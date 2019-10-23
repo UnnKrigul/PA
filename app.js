@@ -1,30 +1,44 @@
-// Logid konsoolile
+// Muutujad
 
-//logid
+// var, let, const
+var nimi = 'Unn'; // defineerimine
+console.log(nimi); 
+nimi = 'Kata' // väärtuse omistamine
+console.log(nimi)
 
-console.log('123')
+// muutuja initsialiseerimine
+var tervitus;
+console.log(tervitus);
+tervitus = 'tere'
+console.log(tervitus);
 
-// tabelid
+// liitnimede kasutamine
+var eesNimi = 'Unn'; //Camel Style
+var ees_nimi = 'Unn'; //PHP Style
+var EesNimi = 'Unn'; //Pascal Style
 
-console.table ({a : 1, b : 2})
+// let
+let pereNimi = 'Krigul';
+console.log(pereNimi);
+pereNimi='?'
+console.log(pereNimi)
 
-// veateade
+// const
 
-console.error ('See on error')
+const minuEesNimi = 'Unn'
+console.log(minuEesNimi)
+// minuEesNimi = 'Katrin'
+// console.log(minuEesNimi)
 
-// vead
+// const kasutamise näide
+const inimene = {nimi : 'Katrin', vanus : 20};
+console.table(inimene);
 
-console.warn ('Hoiatus')
+inimene.vanus = 21;
+console.table(inimene);
 
-// ajakulu kontroll
-
-console.time('test');
-    console.log('tegevus');
-    console.log('tegevus');
-    console.log('tegevus');
-    console.log('tegevus');
-console.timeEnd('test');
-
-// kustutamine
-
-console.clear();
+// const kasutamise näide 2
+const arvud = [1, 2, 3, 4, 5];
+console.log(arvud);
+arvud.push(6);
+console.log(arvud);

@@ -1,31 +1,30 @@
-// Andmetüübid
+// Logid konsoolile
 
-//Täisarvud
+//logid
 
-console.log(10);
-console.log(-4);
-console.log(0);
+console.log('123')
 
-// Ujuvkomaarv
+// tabelid
 
-console.log(2.5);
-console.log(3.14);
-console.log(-7.23);
-console.log(2.0);
+console.table ({a : 1, b : 2})
 
-// Sõned (string)
+// veateade
 
-console.log('Hello World')
+console.error ('See on error')
 
-// Tõeväärtused
+// vead
 
-console.log(true); // tõene
-console.log(false); // väär
+console.warn ('Hoiatus')
 
-// Nimekirjad (array)
+// ajakulu kontroll
 
-console.log ([1, 2, 3, 4]);
+console.time('test');
+    console.log('tegevus');
+    console.log('tegevus');
+    console.log('tegevus');
+    console.log('tegevus');
+console.timeEnd('test');
 
-// Objektid
+// kustutamine
 
-console.table({a : 1, b : 2})
+console.clear();

@@ -5,3 +5,16 @@
 * Github repo loomine
 * VSCode remote loomine
 * Kursuse põhifailide loomine
+## Andmetüübid
+* Täisarvud
+* Reaalarvud (ujuvkoma)
+* Sõne (string) ''
+* Tõeväärtused
+* Nimekirjad []
+* Objektid {}
+## Muutujad
+* ```var, let, const```
+* initsialiseerimine ```var muutujaNimi;```
+* omistamine ```var muutujaNimi = väärtus```
+* var ja let väärtuseid saab muuta
+* const väärtust ei saa muuta

@@ -1,18 +1,13 @@
-let numbrid =[]
-for(let kord = 0; kord < numbrid.length; kord++){
-    for(let i = 0; i < 10; i++) {
-        let arv = Math.floor(Math.random() * 10);
-        numbrid.push (arv);
-        console.log (numbrid[i])
-    }
-
-    for(let i = 0; i < numbrid.length; i++) {
-        let abi;
-        if (numbrid[i] > numbrid[i+1]){
-            abi = numbrid[i];
-            numbrid[i] = numbrid[i+1];
-            numbrid[i+1] = abi
-        }
-    }
+let arv = 5;
+let jagaja = 2;
+while (arv % jagaja != 0){
+    console.log(arv % jagaja);
+    jagaja++;
 }
-console.log(numbrid)
+
+if (arv == jagaja) {
+    console.log (arv + ' on jagaja')
+}
+else {
+    console.log (arv + ' ei ole jagaja')
+}

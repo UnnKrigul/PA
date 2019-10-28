@@ -83,3 +83,17 @@ if (punktid > 90) {
     else {
         console.log ("Töö tuleb uuesti teha")
     }
+
+// Tsüklid/Loops
+// For tsükkel 
+
+let arv;
+
+for (arv = 1; arv <= 10; arv++) {
+    if (arv < 10) {
+        console.log('Arv =  ' + arv)
+    }
+    else {
+    console.log('Arv = ' + arv)
+    }
+}

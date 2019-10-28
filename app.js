@@ -88,12 +88,20 @@ if (punktid > 90) {
 // For tsükkel 
 
 let arv;
+let lause;
 
 for (arv = 1; arv <= 10; arv++) {
+    lause = 'Arv = ';
     if (arv < 10) {
-        console.log('Arv =  ' + arv)
+        lause = lause + ' ';
+    }
+    lause = lause + arv;
+    if (arv % 2 == 0) {
+        lause = lause + ' - paaris'
+        continue;
     }
     else {
-    console.log('Arv = ' + arv)
+    lause = lause + ' - paaritu'
     }
+    console.log (lause)
 }

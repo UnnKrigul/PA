@@ -1,44 +1,85 @@
-// Muutujad
+// If tingimuslause
+// Tingimuslause tingimuslause sees
 
-// var, let, const
-var nimi = 'Unn'; // defineerimine
-console.log(nimi); 
-nimi = 'Kata' // väärtuse omistamine
-console.log(nimi)
+let pin = 1234;
+let kontoJaak = 100;
+let valja = 50;
 
-// muutuja initsialiseerimine
-var tervitus;
-console.log(tervitus);
-tervitus = 'tere'
-console.log(tervitus);
+if (pin == 1234) {
+    console.log ("parool õige");
+    console.log ("Teie konto jääk on " + kontoJaak + "€");
+    console.log ("Soovite välja võtta " + valja + "€")
 
-// liitnimede kasutamine
-var eesNimi = 'Unn'; //Camel Style
-var ees_nimi = 'Unn'; //PHP Style
-var EesNimi = 'Unn'; //Pascal Style
+    if (valja <= kontoJaak) {
+        console.log ("Palun võtke oma raha");
+        kontoJaak = (kontoJaak - valja);
+        console.log ("Teie konto jääk on " + kontoJaak + "€")
+    }
 
-// let
-let pereNimi = 'Krigul';
-console.log(pereNimi);
-pereNimi='?'
-console.log(pereNimi)
+    else {
+        console.log ("Kontol pole piisavalt raha")
+    }
+}
 
-// const
+else {
+    console.log ("parool vale");
+}
 
-const minuEesNimi = 'Unn'
-console.log(minuEesNimi)
-// minuEesNimi = 'Katrin'
-// console.log(minuEesNimi)
+// Mitmeosalised tingimused
+// AND
 
-// const kasutamise näide
-const inimene = {nimi : 'Katrin', vanus : 20};
-console.table(inimene);
+let pin1 = 1;
+let pin2 = 2;
 
-inimene.vanus = 21;
-console.table(inimene);
+if (pin1 == 1 && pin2 == 2) {
+    console.log ("Seif avaneb");
+}
 
-// const kasutamise näide 2
-const arvud = [1, 2, 3, 4, 5];
-console.log(arvud);
-arvud.push(6);
-console.log(arvud);
+else {
+    console.log ("Politsei viib päti vangi");
+}
+
+// OR
+
+if (pin1 == 1 || pin2 == 2) {
+    console.log ("Seif avaneb");
+}
+
+else {
+    console.log ("Politsei viib päti vangi");
+}
+
+// NOT
+
+let value = 1;
+
+if (value !== 1) {
+    console.log (true);
+}
+
+else {
+    console.log (false);
+}
+
+// Mitmeharulised if laused elif-iga
+
+let punktid = 95;
+
+if (punktid > 90) {
+    console.log ("hinne A");
+}
+    else if (punktid > 80) {
+        console.log ("hinne B");
+    }
+    else if (punktid > 70) {
+        console.log ("hinne C");
+    }
+    else if (punktid > 60) {
+        console.log("hinne D");
+    }
+    else if (punktid > 50) {
+        console.log ("hinne E");
+    }
+    else {
+        console.log ("Töö tuleb uuesti teha")
+    }

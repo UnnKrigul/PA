@@ -107,3 +107,9 @@ for (arv = 1; arv <= 10; arv++) {
         break;
     }
 }
+
+let autod =['Kia', 'Toyota', 'Ford', 'Nissan']
+
+for(let i = 0; i < autod.length; i++) {
+    console.log(autod[i])
+}

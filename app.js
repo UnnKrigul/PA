@@ -34,14 +34,14 @@ function ristkylikuPindala(pikkus, laius){
 }
 
 
-function v2ljastus(pikkus, laius){
+function v2ljastus(pikkus = 0, laius = 0){
     
     console.log('Pikkus = ' + pikkus);
     console.log('Laius = ' + laius);
-    let rPindala = ('Pindala = ' + ristkylikuPindala(2, 4));
+    let rPindala = ('Pindala = ' + ristkylikuPindala(pikkus, laius));
     console.log(rPindala);
 }
 
-v2ljastus(2, 4)
+v2ljastus(2, 7);
 
 

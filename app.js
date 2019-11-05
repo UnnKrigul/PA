@@ -1,13 +1,27 @@
-let arv = 5;
-let jagaja = 2;
-while (arv % jagaja != 0){
-    console.log(arv % jagaja);
-    jagaja++;
-}
+// Funktsioonid
 
-if (arv == jagaja) {
-    console.log (arv + ' on jagaja')
+// arvu paarsuse kontroll
+/*  function funktsiooniNimi(param1, param2, param3){
+    	funktsiooni sisu
+}
+ */
+// funktsiooni defineerimine
+function paarsusK(arv){
+    // defineerime suvalise täisarvu
+
+// arvutame jäägi 2-ga jagamisel
+let jaak = arv % 2;
+
+//kui jääk on võrnde 0ga
+
+if( jaak === 0){
+    console.log(arv + ' on paaris')
 }
 else {
-    console.log (arv + ' ei ole jagaja')
+    console.log(arv + ' ei ole paaris')
 }
+}
+
+// funktsiooni kasutamine
+paarsusK(2);
+

@@ -1,47 +1,7 @@
-// Funktsioonid
+// Global
 
-// arvu paarsuse kontroll
-/*  function funktsiooniNimi(param1, param2, param3){
-    	funktsiooni sisu
-}
- */
-// funktsiooni defineerimine
-function paarsusK(arv){
-    // defineerime suvalise täisarvu
-    let lause;
-    // arvutame jäägi 2-ga jagamisel
-    let jaak = arv % 2;
-    
+let a = 1;
+let b = 2;
+const c = 3;
 
-    //kui jääk on võrnde 0ga
-    if( jaak === 0){
-        lause = arv + ' on paaris';
-    }  else {
-        lause = arv + ' ei ole paaris';
-    }
-    return lause;
-}
-
-// funktsiooni kasutamine
-let paarsus = paarsusK(3);
-console.log(paarsus);
-
-
-
-function ristkylikuPindala(pikkus, laius){
-    let pindala = pikkus * laius;
-    return pindala;
-}
-
-
-function v2ljastus(pikkus = 0, laius = 0){
-    
-    console.log('Pikkus = ' + pikkus);
-    console.log('Laius = ' + laius);
-    let rPindala = ('Pindala = ' + ristkylikuPindala(pikkus, laius));
-    console.log(rPindala);
-}
-
-v2ljastus(2, 7);
-
-
+console.log('Global', a, b, c);
